@@ -80,10 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotel.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hotel.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="221" selection-end="221" vertical-scroll-proportion="0.26501766">
+            <state line="10" column="29" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.76855123">
               <folding />
             </state>
           </provider>
@@ -125,6 +134,7 @@
         <option value="$PROJECT_DIR$/app/models/hotel.rb" />
         <option value="$PROJECT_DIR$/app/models/table.rb" />
         <option value="$PROJECT_DIR$/app/models/booking.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -558,7 +568,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/hotel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="221" selection-end="221" vertical-scroll-proportion="0.26501766">
+        <state line="10" column="29" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="593" selection-end="593" vertical-scroll-proportion="0.76855123">
           <folding />
         </state>
       </provider>
