@@ -4,6 +4,8 @@ HotTabBook::Application.routes.draw do
   resources :homes do
     collection  do
       get :dashboard
+      get :invite
+      post :send_invite
     end
   end
   end

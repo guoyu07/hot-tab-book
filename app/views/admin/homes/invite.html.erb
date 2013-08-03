@@ -1,0 +1,4 @@
+<%= form_tag(send_invite_homes_path,:method => 'post') do %>
+<%= text_area_tag "email",nil, :class => 'email',:placeholder => "Enter Friend's email" %>
+<%= submit_tag 'Invites' %>
+<% end %>
