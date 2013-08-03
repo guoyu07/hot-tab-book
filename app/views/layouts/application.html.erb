@@ -17,9 +17,14 @@
   </head>
   <body>
     <section class="fullWrap">
+      <section class="headerWrap">
+        <div class="container">
       <%= render :partial => 'layouts/header'%>
       <%= yield %>
+        </div>
       <%= render :partial => 'layouts/footer'%>
+
+      </section>
     </section>
       <!-- Javascripts
       ================================================== -->
