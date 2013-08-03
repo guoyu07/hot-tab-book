@@ -9,9 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap
+ *= require hotTabBooking
  *= require developer
  *= require_self
  */
-.push-header-up {
-  margin-top: 70px;
-}

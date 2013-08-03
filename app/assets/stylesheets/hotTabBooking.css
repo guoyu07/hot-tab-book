@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: arial, "sans serif"
+}
+.homeSearchFullWrap{
+  background: url("../assets/homeBg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 460px;
+}
+.headerWrap{
+  background:#222222;
+  height: 50px;
+  padding-top: 15px;
+}
+h3.logo, .logo a{
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.topContactDetails h4{
+  color: #cccccc;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.searchPanel{
+  text-align: center;
+}
+.selectCity {
+  width: 620px;
+  margin: 180px auto;
+}
+.sbHolder{
+  background-color: #ffffff;
+  border: solid 1px #358efb;
+  height: 48px;
+  position: relative;
+  width: 620px;
+  margin: 200px auto;
+  border-radius: 10px;
+}
+.sbSelector{
+  display: block;
+  height: 48px;
+  left: 0;
+  line-height: 48px;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 10px;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  color: #444;
+}
+.sbSelector:hover{
+  text-decoration: none;
+}
+.sbToggle{
+  background:#358efb url(../assets/sprite.png) 20px 20px no-repeat;
+  display: block;
+  height: 48px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  border-radius: 0 10px 10px 0;
+  z-index: 5;
+}
+.sbToggle:hover{
+  background:#358efb url(../assets/sprite.png) 20px 20px no-repeat;
+}
+.sbToggleOpen{
+  background:#358efb url(../assets/sprite.png) 20px -16px no-repeat;
+}
+.sbToggleOpen:hover{
+  background:#358efb url(../assets/sprite.png) 20px -16px no-repeat;
+}
+.sbHolderDisabled{
+  background-color: #3C3C3C;
+  border: solid 1px #515151;
+}
+ul.sbOptions {
+  top:49px !important;
+}
+.sbOptions{
+  background:#ffffff;
+  list-style: none;
+  left: 4px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  width: 610px;
+  z-index: 1;
+  overflow-y: auto;
+  text-align: left;
+  border-radius: 0 0 10px 10px;
+
+}
+.sbOptions li{
+  padding: 0 7px;
+  border-bottom: dotted 1px #515151;
+}
+.sbOptions li:last-child{
+  border-bottom: none
+}
+.sbOptions a{
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 0 10px 3px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+  color: #444;
+  text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+  color: #000;
+}
+.sbOptions li.last a{
+  border-bottom: none;
+}
+
+.sbOptions .sbSub{
+  padding-left: 17px;
+}
+:focus, :active {
+  outline: 0;
+}
+.cityHotelList{
+  margin-top: 80px;
+}
+.cityHotelList ul li{
+  display: block;
+  float: left;
+  width: 270px;
+  text-align: center;
+  margin-left: 60px;
+}
+.cityHotelList ul li span.hotelName{
+  color: #666666;
+  font-size: 18px;
+  padding:15px 0;
+  display: block;
+}
+.cityHotelList ul li:first-child{
+  margin-left: 0
+}
+
+.cityHotelList ul li a{
+  display: block;
+  float: left;
+  transition: all 0.5s ease-in-out 0s;
+}
+.cityHotelList ul li a:hover {
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+.footer{
+  background: #444;
+  padding: 15px;
+  text-align: center;
+}
+.footer .copyrightTxt{
+  color: #cccccc;
+}
