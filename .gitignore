@@ -9,6 +9,15 @@
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
+config/database.yml
+
+config/cucumber.yml
+config/application.example.yml
+vendor/bundle
+db/schema.rb
+
+#Ignore all .Idea
+ .idea
 
 # Ignore all logfiles and tempfiles.
 *.rbc
