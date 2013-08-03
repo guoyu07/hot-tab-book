@@ -1,5 +1,6 @@
 HotTabBook::Application.routes.draw do
   devise_for :users
+  resources :users
   scope :module => "admin" do
     resources :homes do
       collection  do
@@ -9,6 +10,10 @@ HotTabBook::Application.routes.draw do
   end
 
   resources :home
+  resources :hotels do
+    resources :bookings
+    resources :gallaries
+  end  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
