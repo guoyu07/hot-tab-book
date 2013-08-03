@@ -6,6 +6,7 @@ class CreateBookings < ActiveRecord::Migration
       t.string :email
       t.datetime :time_slot
 
+      t.references :hotel
       t.timestamps
     end
   end

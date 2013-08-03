@@ -7,6 +7,7 @@ class CreateHotels < ActiveRecord::Migration
       t.string :website
       t.string :email
 
+      t.references :user
       t.timestamps
     end
   end

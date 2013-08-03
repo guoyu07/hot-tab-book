@@ -5,6 +5,8 @@ class CreateTables < ActiveRecord::Migration
       t.integer :capacity
       t.string :description
 
+      t.references :hotel
+      t.references :booking
       t.timestamps
     end
   end
