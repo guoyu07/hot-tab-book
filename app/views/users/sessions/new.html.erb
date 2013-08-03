@@ -15,3 +15,13 @@
 <% end %>
 
 <%= render "users/shared/links" %>
+<script type=text/javascript>
+    $(document).ready(function(){
+        var user_email = new LiveValidation( 'user_email', {validMessage:" ",onlyOnSubmit: true } );
+        user_email.add( Validate.Presence);
+        var user_password = new LiveValidation( 'user_password', {validMessage:" ",onlyOnSubmit: true } );
+        user_password.add( Validate.Presence);
+        var user_password_confirmation = new LiveValidation( 'user_password_confirmation', {validMessage:" ",onlyOnSubmit: true } );
+        user_password_confirmation.add( Validate.Presence);
+    });
+</script>
