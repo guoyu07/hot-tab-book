@@ -34,4 +34,7 @@ $(document).ready(function(){
 	  timeFormat: 'hh:mm:ss',
 	  stepMinute: 5,
   });
+
+  val bookedTables = $('.bookedTables').attr('rel');
+  console.log(bookedTables);
 });

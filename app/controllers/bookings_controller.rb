@@ -3,11 +3,8 @@ class BookingsController < ApplicationController
   	@current_time = Time.now
   	hotel = Hotel.find(params[:hotel_id])
   	@booking = hotel.bookings.new
-  end
-
-  def index
-    hotel = Hotel.find(params[:hotel_id])
-    @bookings = hotel.bookings
+  	@bookings = hotel.bookings.where('time_slot',@current_time)
+  	@booked_tables = @bookings.collect{|p| p.table_id}
   end
   def create
   	hotel = Hotel.find(params[:hotel_id])
