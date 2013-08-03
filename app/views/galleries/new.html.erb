@@ -9,3 +9,10 @@
   <% end %>
   <p><%= f.submit "Submit" %></p>
 <% end %>
+
+<script type=text/javascript>
+    $(document).ready(function(){
+        var gallery_title = new LiveValidation( 'gallery_title', {validMessage:" ",onlyOnSubmit: true } );
+        gallery_title.add( Validate.Presence);
+    });
+</script>

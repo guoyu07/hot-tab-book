@@ -1,0 +1,25 @@
+<% if @bookings.present? %>
+    <h1>Booking Details</h1>
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>User Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Time Slot</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @bookings.to_enum.with_index(1) do |booking, index| %>
+          <tr>
+            <td><%= index %></td>
+            <td><%= booking.user_name %></td>
+            <td><%= booking.email %></td>
+            <td><%= booking.phone_number %></td>
+            <td><%= booking.time_slot %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+<% end %>
