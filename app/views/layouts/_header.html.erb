@@ -1,5 +1,4 @@
-<section class="headerWrap">
-  <div class="container">
+
     <div class="row">
       <div class="span5 pull-left">
         <h3 class="logo"><a href="#">Hot-Tab-Booking</a></h3>
@@ -7,13 +6,12 @@
       <div class="span3 topContactDetails pull-right">
         <h4>Call Us : 123 456 7890</h4>
         <ul class="loginDetails">
-        <% if !@current_user %>
-          <li><a href="#">Login</a></li>
+        <% if !current_user %>
+          <li><%= link_to "Login", new_user_session_path %></li>
         <% else %>
-          <li><a href="#">Logout</a></li>
+          <li><%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => ""  %></li>
         <% end %>          
         </ul>
       </div>
     </div>
-  </div>
-</section>
+

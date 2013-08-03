@@ -72,6 +72,8 @@ HotTabBook::Application.routes.draw do
   root :to => 'home#index'
   devise_scope :user do
     match'/admin', :to => "devise/sessions#new"
+    get "/users/sign_in", :to => "devise/sessions#new"
+    get "/users/sign_out", :to => "devise/sessions#destroy"
   end
 
   # See how all your routes lay out with "rake routes"

@@ -5,6 +5,9 @@
 body{
   font-family: arial, "sans serif"
 }
+.container{
+    min-height: 820px;
+}
 .homeSearchFullWrap{
   background: url("../assets/homeBg.jpg") 0 0 no-repeat;
   background-size: cover;
@@ -195,7 +198,7 @@ ul.sbOptions {
 }
 
 .hotelName{
-  background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;
+  /*background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;*/
   height: 820px;
 }
 .washroomTop{
