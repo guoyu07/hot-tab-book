@@ -10,7 +10,7 @@ class Hotel < ActiveRecord::Base
   has_one :gallery
 
   def find_hotel_by_city(city)
-  c = city.upcase
+  c = city.downcase
   Hotel.select{|hotel| hotel.city==city}
   end
 end
