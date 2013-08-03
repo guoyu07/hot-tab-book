@@ -1,0 +1,26 @@
+.tableDetails, .tableDetails1{
+position: absolute;
+background-color: white;
+top: 41px;
+padding: 10px;
+border: 1px solid #CCC;
+text-decoration: none;
+z-index: 5;
+width: 188%
+}
+.tableDetails2, .tableDetails1{
+	width: 100%;
+	text-align: left;
+	top: 40px;
+	position: absolute;
+}
+.tableDetails:hover{
+	text-decoration: none;
+}
+.bottomTable ul li ul li{
+	position: relative;
+}
+.tableDetails3{
+top: 0;
+
+}

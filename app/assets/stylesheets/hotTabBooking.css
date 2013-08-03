@@ -233,7 +233,8 @@ ul.sbOptions {
 .tables ul li{
   margin-bottom: 20px !important;
   float: left;
-}
+  position: relative;
+} 
 
 .specialRooms{
   background: #cccccc;

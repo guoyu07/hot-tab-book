@@ -1,4 +1,6 @@
 <%= stylesheet_link_tag "jquery-ui" %>
+<%= stylesheet_link_tag "booking" %>
+<%= stylesheet_link_tag "jquery.fancybox" %>
 <%= javascript_include_tag "bookings" %>
 
 <div class="hotelName clearfix">
@@ -9,16 +11,56 @@
             <ul class="clearfix">
               <li class="tables">
                 <ul class="clearfix">
-                  <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+	              <div class="tableDetails" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+			  </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
             </ul>
             <ul class="clearfix">
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
-              <li><a href="#" class="topTable">&nbsp;</a></li></li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails1" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails1" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails1" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
+              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              	<div class="tableDetails1" style="display: none;">
+			        <p>Capacity : <%= %></p>
+			        <p>Note : <%= %></p>
+			      </div>
+              </li>
             </ul>
             </li>
             <li>
@@ -49,20 +91,60 @@
                 <ul class="clearfix">
                   <li class="tables">
                     <ul class="clearfix">
-                      <li><a href="#" class="topTable">&nbsp;</a></li>
-                      <li><a href="#" class="topTable">&nbsp;</a></li>
-                      <li><a href="#" class="topTable">&nbsp;</a></li>
-                      <li><a href="#" class="topTable">&nbsp;</a></li>
+                      <li><a href="#registration_form" class="topTable" >&nbsp;</a>
+                      	<div class="tableDetails2" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			            </div>
+                      </li>
+                      <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                      	<div class="tableDetails2" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			            </div>
+                      </li>
+                      <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                      	<div class="tableDetails2" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			            </div>
+                      </li>
+                      <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                      	<div class="tableDetails2" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			            </div>
+                      </li>
                     </ul>
                   </li>
                 </ul>
               <li>
               <li>
                 <ul class="clearfix">
-                  <li><a href="#" class="topTable">&nbsp;</a></li>
-                  <li><a href="#" class="topTable">&nbsp;</a></li>
-                  <li><a href="#" class="topTable">&nbsp;</a></li>
-                  <li><a href="#" class="topTable">&nbsp;</a></li>
+                  <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                  	<div class="tableDetails3" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			        </div>
+                  </li>
+                  <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                  	<div class="tableDetails3" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			        </div>
+                  </li>
+                  <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                  	<div class="tableDetails3" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			        </div>
+                  </li>
+                  <li><a href="#registration_form" class="topTable">&nbsp;</a>
+                  	<div class="tableDetails3" style="display: none;">
+			              <p>Capacity : <%= %></p>
+			              <p>Note : <%= %></p>
+			        </div>
+                  </li>
                 </ul>
             </li>
               <li>
@@ -85,12 +167,10 @@
         <input type="text" name="email" id="reservation_email" />
         <label for="reservation_phone">Phone:</label>
         <input type="text" name="phone" id="reservation_phone" />
-        <label for="reservation_date">Date:</label>
-        <input type="text" name="date" id="reservation_date" />
         <input type="hidden" name="hotel_id" id="hotel_id" />
         <input type="hidden" name="table_id" id="table_id" />
         <label for="reservation_time">time:</label>
         <input type="text" name="email" id="reservation_time" />
-        <input type="submit" value="Register" />
+        <input type="submit" value="Register" class="btn btn-large pull-left" />
     </fieldset>
 </form><!-- booking fancy form : end -->
