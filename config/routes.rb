@@ -1,6 +1,6 @@
 HotTabBook::Application.routes.draw do
   devise_for :users
-  resources :users
+  #resources :users
   scope :module => "admin" do
   resources :homes do
     collection  do
