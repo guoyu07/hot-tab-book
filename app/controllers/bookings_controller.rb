@@ -7,5 +7,6 @@ class BookingsController < ApplicationController
   def create
   	hotel = Hotel.find(params[:hotel_id])
   	hotel.bookings.create(params[:booking])
+  	redirect_to :action => :new
   end	
 end
