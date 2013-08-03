@@ -1,4 +1,6 @@
+<%= stylesheet_link_tag "jquery-ui" %>
 <%= javascript_include_tag "bookings" %>
+
 <div class="hotelName clearfix">
       <div class="container">
         <div class="clearfix"></div>
@@ -73,3 +75,22 @@
     </div>
   </section>
  <div class="clearfix"></div>
+
+ <!-- booking fancy form : start -->
+<form action="#registration_url" method="post" id="registration_form">
+    <fieldset>
+        <label for="reservation_name">Name:</label>
+        <input type="text" name="name" id="reservation_name" />
+        <label for="reservation_email">email:</label>
+        <input type="text" name="email" id="reservation_email" />
+        <label for="reservation_phone">Phone:</label>
+        <input type="text" name="phone" id="reservation_phone" />
+        <label for="reservation_date">Date:</label>
+        <input type="text" name="date" id="reservation_date" />
+        <input type="hidden" name="hotel_id" id="hotel_id" />
+        <input type="hidden" name="table_id" id="table_id" />
+        <label for="reservation_time">time:</label>
+        <input type="text" name="email" id="reservation_time" />
+        <input type="submit" value="Register" />
+    </fieldset>
+</form><!-- booking fancy form : end -->
