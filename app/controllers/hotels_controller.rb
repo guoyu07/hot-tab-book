@@ -4,9 +4,11 @@ class HotelsController < ApplicationController
   end
   
   def create
-  	Hotel.build(params[:hotel])
+  	Hotel.create(params[:hotel])
+  	redirect_to :action => 'index'
   end
   
   def index
+  	@hotels = Hotel.all
   end	
 end

@@ -1,5 +1,5 @@
 class Hotel < ActiveRecord::Base
-  attr_accessible :address, :email, :name, :phone_number, :website
+  attr_accessible :address, :email, :name, :phone_number, :website, :city
 
   belongs_to :user
 
