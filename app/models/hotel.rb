@@ -5,7 +5,7 @@ class Hotel < ActiveRecord::Base
   belongs_to :user
 
   has_many :tables
-  has_many :bookings, through: :tables
+  has_many :bookings
   has_one :sitemap
   has_one :gallery
 

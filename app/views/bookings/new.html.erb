@@ -11,13 +11,13 @@
             <ul class="clearfix">
               <li class="tables">
                 <ul class="clearfix">
-              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              <li><a href="#registration_form" id="1" class="topTable">&nbsp;</a>
 	              <div class="tableDetails" style="display: none;">
 			        <p>Capacity : <%= %></p>
 			        <p>Note : <%= %></p>
 			      </div>
 			  </li>
-              <li><a href="#registration_form" class="topTable">&nbsp;</a>
+              <li><a href="#registration_form" id="2" class="topTable">&nbsp;</a>
               	<div class="tableDetails" style="display: none;">
 			        <p>Capacity : <%= %></p>
 			        <p>Note : <%= %></p>
@@ -159,18 +159,25 @@
  <div class="clearfix"></div>
 
  <!-- booking fancy form : start -->
-<form action="#registration_url" method="post" id="registration_form">
+ <%= form_for @booking, :url => { :action => :create }, :html =>{ :style => 'display : none', :id => 'registration_form'} do |f| %>
     <fieldset>
-        <label for="reservation_name">Name:</label>
-        <input type="text" name="name" id="reservation_name" />
-        <label for="reservation_email">email:</label>
-        <input type="text" name="email" id="reservation_email" />
-        <label for="reservation_phone">Phone:</label>
-        <input type="text" name="phone" id="reservation_phone" />
-        <input type="hidden" name="hotel_id" id="hotel_id" />
-        <input type="hidden" name="table_id" id="table_id" />
-        <label for="reservation_time">time:</label>
-        <input type="text" name="email" id="reservation_time" />
+      <p>
+        <%= f.label :user_name, "Name" %><br />
+        <%= f.text_field :user_name %>
+      </p>
+      <p>
+        <%= f.label :phone_number, "Phone" %><br />
+        <%= f.text_field :phone_number %>
+      </p>
+      <p>
+        <%= f.label :email, "Email" %><br />
+        <%= f.text_field :email %>
+      </p>
+      <p>
+        <%= f.label :time_slot, "DateTime" %><br />
+        <%= f.text_field :time_slot %>
+      </p>
+        <input type="hidden" name="booking[table_id]" id="table_id" />
         <input type="submit" value="Register" class="btn btn-large pull-right" />
     </fieldset>
-</form><!-- booking fancy form : end -->
+<% end %><!-- booking fancy form : end -->
