@@ -7,6 +7,8 @@ HotTabBook::Application.routes.draw do
     end
   end
   end
+
+  resources :home
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -60,6 +62,7 @@ HotTabBook::Application.routes.draw do
   devise_scope :user do
     match'/admin', :to => "devise/sessions#new"
   end
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
