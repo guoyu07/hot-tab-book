@@ -22,7 +22,7 @@
     <div class="control-group">
       <%= f.label :website, "Website-Url", :class => 'control-label' %>
       <div class="controls">
-        <%= f.url_field :website, :placeholder => 'http://www.website.com'  %>
+        <%= f.text_field :website, :placeholder => 'http://www.website.com'  %>
       </div>
     </div>
     <div class="control-group">
@@ -39,8 +39,23 @@
     </div>
     <div class="control-group">
       <div class="controls" id="webo-new-post-submit-btn">
-        <%= f.submit "Save"%>
+        <%= f.submit "Save",:class => "btn btn-primary"%>
       </div>
     </div>
   <% end %>
 </div>
+
+<script type=text/javascript>
+    $(document).ready(function(){
+    var hotel_name = new LiveValidation( 'hotel_name', {validMessage:" ",onlyOnSubmit: true } );
+    hotel_name.add( Validate.Presence);
+    var hotel_address = new LiveValidation( 'hotel_address', {validMessage:" ",onlyOnSubmit: true } );
+    hotel_address.add( Validate.Presence);
+    var hotel_city = new LiveValidation( 'hotel_city', {validMessage:" ",onlyOnSubmit: true } );
+    hotel_city.add( Validate.Presence);
+    var hotel_website =  new LiveValidation( 'hotel_website', {validMessage:" ",onlyOnSubmit: true } );
+    hotel_website.add( Validate.Presence);
+    var hotel_phone_number = new LiveValidation( 'hotel_phone_number', {validMessage:" ",onlyOnSubmit: true } );
+        hotel_phone_number.add( Validate.Presence);
+    });
+</script>
