@@ -1,5 +1,13 @@
 HotTabBook::Application.routes.draw do
   devise_for :users
+  scope :module => "admin" do
+  resources :homes do
+    collection  do
+      get :dashboard
+    end
+  end
+  end
+
   resources :home
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +58,10 @@ HotTabBook::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   root :to => 'devise/registrations#new'
+  devise_scope :user do
+    match'/admin', :to => "devise/sessions#new"
+  end
 
   # See how all your routes lay out with "rake routes"
 
