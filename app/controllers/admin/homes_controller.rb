@@ -9,9 +9,10 @@ class Admin::HomesController < ApplicationController
   end
 
   def send_invite
+  logger.info"##########{params.inspect}"
   email = params[:email]
+  UserMailer.invite_hotel(email).deliver
   flash[:notice] = "Email sent successfully"
-  #EventNotification.event_invitation(emails,user,event,chapter).deliver
   redirect_to dashboard_homes_path
   end
 end
