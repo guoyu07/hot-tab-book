@@ -18,14 +18,12 @@ ActiveRecord::Schema.define(:version => 20130803145043) do
     t.string   "phone_number"
     t.string   "email"
     t.datetime "time_slot"
-    t.integer  "hotel_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
 
   create_table "galleries", :force => true do |t|
     t.string   "title"
-    t.integer  "hotel_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -36,7 +34,6 @@ ActiveRecord::Schema.define(:version => 20130803145043) do
     t.string   "phone_number"
     t.string   "website"
     t.string   "email"
-    t.integer  "user_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
     t.string   "city"
@@ -45,13 +42,11 @@ ActiveRecord::Schema.define(:version => 20130803145043) do
 
   create_table "images", :force => true do |t|
     t.string   "data"
-    t.integer  "gallery_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "sitemaps", :force => true do |t|
-    t.integer  "hotel_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -60,8 +55,6 @@ ActiveRecord::Schema.define(:version => 20130803145043) do
     t.integer  "table_number"
     t.integer  "capacity"
     t.string   "description"
-    t.integer  "hotel_id"
-    t.integer  "booking_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

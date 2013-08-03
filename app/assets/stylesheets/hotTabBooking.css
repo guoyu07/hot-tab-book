@@ -25,6 +25,7 @@ h3.logo, .logo a{
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  float: left;
 }
 .searchPanel{
   text-align: center;
@@ -171,4 +172,150 @@ ul.sbOptions {
 }
 .footer .copyrightTxt{
   color: #cccccc;
+}
+
+/*hotel-css*/
+.fullContainerWhite{
+  background: #ffffff;
+  padding: 15px;
+  overflow: hidden;
+}
+.hotelName{
+  background: #ffffff;
+  float: left;
+  width: 100%
+}
+.hotelLayout{
+  width: 725px;
+  min-height: 500px;
+  background: #ffffff;
+  margin: 60px auto;
+  border: solid 1px #888a8c;
+  padding: 20px;
+}
+
+.hotelName{
+  background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;
+  height: 820px;
+}
+.washroomTop{
+  background: #cccccc;
+  height:55px;
+  width: 100px;
+  float: left;
+  text-align: center;
+  padding-top: 0px
+}
+.topTables{
+  display: block;
+}
+.topTables ul, .bottomTable ul li  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topTables li{
+  float: left;
+}
+.topTables ul li a.topTable, .bottomTable ul li a.topTable{
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
+}
+.topTables ul li ul li a, .bottomTable ul li a.topTable{
+  float: left;
+  margin-right: 45px;
+}
+.bottomTable ul li a.topTable{
+  margin-right: 20px;
+}
+.tables ul li{
+  margin-bottom: 20px !important;
+  float: left;
+}
+
+.specialRooms{
+  background: #cccccc;
+  width: 120px;
+  margin-left: 10px;
+}
+.specialRooms .table1, .specialRooms .table2{
+  padding: 20px 40px;
+}
+.specialRooms .table1 a{
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
+}
+.specialRooms .table2 a{
+  display: block;
+  width: 42px;
+  height: 42px;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
+}
+.swimingPool{
+  background: #dceaff;
+  text-align: center;
+  vertical-align: middle;
+  height: 150px;
+  width: 190px;
+  margin-top: 20px;
+}
+.bottomTable {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 375px;
+}
+.swimingPool{
+  float: left;
+}
+.bottomTable ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 270px;
+  float: left;
+}
+.bottomTable ul li .washroomTop{
+  float: left;
+  width: 100px;
+}
+.bottomTable ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.bottomTable ul li.tables{
+  float: left;
+  width: 400px;
+}
+.bottomTable ul li .washroomTop{
+  width: 125px;
+}
+.bottomTable ul li a.topTable{
+  margin-right: 25px;
+}
+.bottomTable ul li .washroomTop{
+  width: 100px;
+}
+.topContactDetails .setting{
+  background: url("../assets/sprite.png") 30px -72px no-repeat;
+  height: 24px;
+  width:60px;
+  display: block;;
+  float: left;
+}
+ul.loginDetails {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: red
+}
+ul.loginDetails li a{
+  margin-left: 20px;
+  color: #358efb;
 }

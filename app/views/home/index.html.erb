@@ -1,11 +1,10 @@
+ <%= javascript_include_tag "home" %>
   <section class="homeSearchFullWrap">
     <div class="container">
       <div class="searchPanel">
         <select name="country_id" class="selectCity" id="country_id" tabindex="1">
-          <option>Pune</option>
-          <option>Mumbai</option>
-          <option>Chennai</option>
-          <option>Banglore</option>
+          <option value ="pune">Pune</option>
+          <option value = "mumbai">Mumbai</option>
         </select>
       </div>
     </div>
@@ -13,26 +12,17 @@
   <section class="cityHotelList">
     <div class="container">
       <div class="row">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="../assets/leMeridian.jpg">
-              <span class="hotelName">Le meridien</span>
+        <ul class="hotelList">
+          <% @hotels.each do |hotel|%>
+          <li class="<%= hotel.city %>_selected">
+            <a href="<%= new_hotel_booking_path(hotel) %>">
+              <img src="<%= hotel.main_image %>">
+              <span class="hotelName"><%= hotel.name %></span>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="../assets/oHotel.jpg">
-              <span class="hotelName">O Hotel</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="../assets/jw-marrite.jpg">
-              <span class="hotelName">Jw marriot</span>
-            </a>
-          </li>
+          <% end %>
         </ul>
       </div>
     </div>
   </section>
+
