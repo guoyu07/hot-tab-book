@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_name: MyString
+  phone_number: MyString
+  email: MyString
+  time_slot: 2013-08-03 15:23:17
+
+two:
+  user_name: MyString
+  phone_number: MyString
+  email: MyString
+  time_slot: 2013-08-03 15:23:17

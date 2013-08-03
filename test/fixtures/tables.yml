@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  table_number: 1
+  capacity: 1
+  description: MyString
+
+two:
+  table_number: 1
+  capacity: 1
+  description: MyString
