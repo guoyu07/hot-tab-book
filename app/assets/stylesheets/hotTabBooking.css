@@ -6,7 +6,7 @@ body{
   font-family: arial, "sans serif"
 }
 .homeSearchFullWrap{
-  background: url("../img/homeBg.jpg") 0 0 no-repeat;
+  background: url("../assets/homeBg.jpg") 0 0 no-repeat;
   background-size: cover;
   height: 460px;
 }
@@ -62,7 +62,7 @@ h3.logo, .logo a{
   text-decoration: none;
 }
 .sbToggle{
-  background:#358efb url(../img/sprite.png) 20px 20px no-repeat;
+  background:#358efb url(../assets/sprite.png) 20px 20px no-repeat;
   display: block;
   height: 48px;
   outline: none;
@@ -74,13 +74,13 @@ h3.logo, .logo a{
   z-index: 5;
 }
 .sbToggle:hover{
-  background:#358efb url(../img/sprite.png) 20px 20px no-repeat;
+  background:#358efb url(../assets/sprite.png) 20px 20px no-repeat;
 }
 .sbToggleOpen{
-  background:#358efb url(../img/sprite.png) 20px -16px no-repeat;
+  background:#358efb url(../assets/sprite.png) 20px -16px no-repeat;
 }
 .sbToggleOpen:hover{
-  background:#358efb url(../img/sprite.png) 20px -16px no-repeat;
+  background:#358efb url(../assets/sprite.png) 20px -16px no-repeat;
 }
 .sbHolderDisabled{
   background-color: #3C3C3C;
@@ -195,7 +195,7 @@ ul.sbOptions {
 }
 
 .hotelName{
-  background: url("../img/leMeridianBg.jpg") 0 0 no-repeat;
+  background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;
   height: 820px;
 }
 .washroomTop{
@@ -221,7 +221,7 @@ ul.sbOptions {
   display: block;
   width: 42px;
   height: 42px;
-  background: url("../img/tableImg.jpg") 0 0 no-repeat;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
 }
 .topTables ul li ul li a, .bottomTable ul li a.topTable{
   float: left;
@@ -247,13 +247,13 @@ ul.sbOptions {
   display: block;
   width: 42px;
   height: 42px;
-  background: url("../img/tableImg.jpg") 0 0 no-repeat;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
 }
 .specialRooms .table2 a{
   display: block;
   width: 42px;
   height: 42px;
-  background: url("../img/tableImg.jpg") 0 0 no-repeat;
+  background: url("../assets/tableImg.jpg") 0 0 no-repeat;
 }
 .swimingPool{
   background: #dceaff;
@@ -302,7 +302,7 @@ ul.sbOptions {
   width: 100px;
 }
 .topContactDetails .setting{
-  background: url("../img/sprite.png") 30px -72px no-repeat;
+  background: url("../assets/sprite.png") 30px -72px no-repeat;
   height: 24px;
   width:60px;
   display: block;;
