@@ -15,7 +15,7 @@ HotTabBook::Application.routes.draw do
   resources :home
   resources :hotels do
     resources :bookings
-    resources :gallaries
+    resources :galleries
     collection  do
       get :dashboard
     end
