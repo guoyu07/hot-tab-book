@@ -1,3 +1,4 @@
+<h1>Add New Hotel</h1>
 <div class="span5">
   <%= form_for @hotel, :multipart => true, :html => {:class => 'form-horizontal'} do |f| %>
     <div class="control-group">
@@ -19,9 +20,9 @@
       </div>
     </div>
     <div class="control-group">
-      <%= f.label :website, "Website-Url", :class => 'control-label'  %>
+      <%= f.label :website, "Website-Url", :class => 'control-label' %>
       <div class="controls">
-        <%= f.url_field :website %>
+        <%= f.url_field :website, :placeholder => 'http://www.website.com'  %>
       </div>
     </div>
     <div class="control-group">
