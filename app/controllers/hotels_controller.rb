@@ -1,11 +1,11 @@
 class HotelsController < ApplicationController
   def new
-    #raise "error"
   	@hotel = Hotel.new
-    logger.info ("\n\n\n####\n\n\n\n\n\\n\n\\n\n\n\n\n\n#{@hotel.inspect}")
   end
   
   def create
+    logger.info"#######{params[:hotel]}"
+    params[:hotel][:city] = params[:hotel][:city].capitalize
     @hotel = Hotel.create(params[:hotel])
   	redirect_to :action => 'index'
   end
