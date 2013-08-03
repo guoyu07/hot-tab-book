@@ -1,0 +1,23 @@
+<h1>Hotels</h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @hotels.to_enum.with_index(1) do |hostel, index| %>
+    <tr>
+      <td><%= index %></td>
+      <td><%= hostel.name %></td>
+      <td><%= hostel.address %></td>
+      <td><%= hostel.phone_number %></td>
+      <td><%= hostel.city %></td>
+    </tr>
+  <% end %>    
+  </tbody>
+</table>
