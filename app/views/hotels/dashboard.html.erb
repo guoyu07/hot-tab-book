@@ -1,2 +1,35 @@
-<%= link_to "Add New Hotel", new_hotel_path,:class=>"btn btn-primary btn-large"%>
+<% if current_user.hotel.present? %>
+    <%= link_to "Edit Hotel Detail", new_hotel_path,:class=>"btn btn-primary btn-large"%>
+<% else %>
+    <%= link_to "Add Hotel Detail", new_hotel_path,:class=>"btn btn-primary btn-large"%>
+<% end %>
 <!--<%#= link_to "Add New Hotel", new_hotel_path,:class=>"btn btn-primary btn-large"%>-->
+<div></div>
+
+<% if @hotel.present? %>
+<h1>Hotel Details</h1>
+<table class="table table-hover">
+  <thead>
+  <tr>
+
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+    <th>City</th>
+    <th>Hotel Images</th>
+    <th>Bookings</th>
+  </tr>
+  </thead>
+  <tbody>
+
+      <tr>
+        <td><%= @hotel.name %></td>
+        <td><%= @hotel.address %></td>
+        <td><%= @hotel.phone_number %></td>
+        <td><%= @hotel.city %></td>
+        <td><%= link_to "Add Images", new_hotel_gallery_path(@hotel) %></td>
+        <td><%= link_to "Show Bookings", hotel_bookings_path(@hotel) %></td>
+      </tr>
+  </tbody>
+</table>
+<% end %>

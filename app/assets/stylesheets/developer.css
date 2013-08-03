@@ -29,4 +29,8 @@ textarea.LV_invalid_field:hover,
 textarea.LV_invalid_field:active {
     border: 1px solid #CC0000;
 }
+.new_gallery{
+ margin-top: 32px;
+margin-left: 43px;
+}
 

@@ -4,6 +4,11 @@ class BookingsController < ApplicationController
   	hotel = Hotel.find(params[:hotel_id])
   	@booking = hotel.bookings.new
   end
+
+  def index
+    hotel = Hotel.find(params[:hotel_id])
+    @bookings = hotel.bookings
+  end
   def create
   	hotel = Hotel.find(params[:hotel_id])
   	hotel.bookings.create(params[:booking])
