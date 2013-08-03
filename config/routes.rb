@@ -16,6 +16,9 @@ HotTabBook::Application.routes.draw do
   resources :hotels do
     resources :bookings
     resources :gallaries
+    collection  do
+      get :dashboard
+    end
   end  
   # The priority is based upon order of creation:
   # first created -> highest priority.

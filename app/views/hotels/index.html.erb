@@ -10,13 +10,13 @@
     </tr>
   </thead>
   <tbody>
-  <% @hotels.to_enum.with_index(1) do |hostel, index| %>
+  <% @hotels.to_enum.with_index(1) do |hotel, index| %>
     <tr>
       <td><%= index %></td>
-      <td><%= hostel.name %></td>
-      <td><%= hostel.address %></td>
-      <td><%= hostel.phone_number %></td>
-      <td><%= hostel.city %></td>
+      <td><%= hotel.name %></td>
+      <td><%= hotel.address %></td>
+      <td><%= hotel.phone_number %></td>
+      <td><%= hotel.city %></td>
     </tr>
   <% end %>    
   </tbody>

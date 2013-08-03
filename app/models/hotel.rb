@@ -1,5 +1,6 @@
 class Hotel < ActiveRecord::Base
-  attr_accessible :address, :email, :name, :phone_number, :website, :city
+  attr_accessible :address, :email, :name, :phone_number, :website, :city, :main_image
+  mount_uploader :main_image, AvatarUploader
 
   belongs_to :user
 

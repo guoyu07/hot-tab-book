@@ -1,5 +1,5 @@
 <div class="span5">
-  <%= form_for @hotel, :method => :post, :html => {:class => 'form-horizontal'} do |f| %>
+  <%= form_for @hotel, :multipart => true, :html => {:class => 'form-horizontal'} do |f| %>
     <div class="control-group">
       <%= f.label :name, "Name", :class => 'control-label'  %>
       <div class="controls">
@@ -28,6 +28,12 @@
       <%= f.label :phone_number, "Phone", :class => 'control-label'  %>
       <div class="controls">
         <%= f.text_field :phone_number %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :main_image, "Hotel Image", :class => 'control-label'  %>
+      <div class="controls">
+        <%= f.file_field :main_image %>
       </div>
     </div>
     <div class="control-group">
