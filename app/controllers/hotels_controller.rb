@@ -4,6 +4,8 @@ class HotelsController < ApplicationController
   end
   
   def create
+    logger.info"#######{params[:hotel]}"
+    params[:hotel][:city] = params[:hotel][:city].capitalize
     @hotel = Hotel.create(params[:hotel])
   	redirect_to :action => 'index'
   end
