@@ -10,9 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //= require jquery
-// require jquery_ujs
 //= require bootstrap
 //= require livevalidation
 //= require jquery.selectbox
+//= require jquery.fancybox
+//= require jquery-ui
+//= require jquery-ui-timepicker-addon
 //= require jquery.custom
 //= require_tree .

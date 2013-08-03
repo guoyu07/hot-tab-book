@@ -198,7 +198,7 @@ ul.sbOptions {
 }
 
 .hotelName{
-  /*background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;*/
+  background: url("../assets/leMeridianBg.jpg") 0 0 no-repeat;
   height: 820px;
 }
 .washroomTop{
@@ -236,7 +236,8 @@ ul.sbOptions {
 .tables ul li{
   margin-bottom: 20px !important;
   float: left;
-}
+  position: relative;
+} 
 
 .specialRooms{
   background: #cccccc;
