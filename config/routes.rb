@@ -2,11 +2,14 @@ HotTabBook::Application.routes.draw do
   devise_for :users
   resources :users
   scope :module => "admin" do
-    resources :homes do
-      collection  do
-        get :dashboard
-      end
+  resources :homes do
+    collection  do
+      get :dashboard
+      get :invite
+      post :send_invite
+
     end
+  end
   end
 
   resources :home
