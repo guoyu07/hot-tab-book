@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require livevalidation
+//= jquery.selectbox-0.2
+//= jquery.custom
 //= require_tree .
